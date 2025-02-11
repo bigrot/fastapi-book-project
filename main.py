@@ -5,7 +5,7 @@ from api.router import api_router
 from core.config import settings
 
 app = FastAPI()
-
+router = APIRouter()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
